@@ -62,7 +62,7 @@ int main(void)
 	//****输出方波的的频率控制****//
 	u32 pwmval=1000;					//占空比中负脉宽的宽度（0.001ms)
 	u32  frq;
-			TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure;
+	TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure;
 	NVIC_InitTypeDef NVIC_InitStructure;
     //****初始化****//
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);//设置系统中断优先级分组2
@@ -95,10 +95,10 @@ int main(void)
 	Dac12_Init();		 									//DAC通道1初始化	
 	PI_Init();                  			//输入管脚初始化
 	PO_Init();                  			//输出管脚初始化
- 	TIM14_PWM_Init(2000-1,84-1);			//84M/84=1Mhz的计数频率,重装载值1000，所以PWM频率为 1M/1000=1Khz.         决定了FPGAROM中数据的刷写速度 
+ 	TIM14_PWM_Init(2000-1,84-1);			//84M/84=1Mhz的计数频率,重装载值2000，所以PWM频率为 1M/2000=0.5Khz.         决定了FPGAROM中数据的刷写速度 
 	TIM_SetCompare1(TIM14,pwmval);  	//修改占空比（保持50% pwmval=arr/2）
 	DAC_SetChannel1Data(DAC_Align_12b_R,dacval);  //初始值为0	--------------20180528--------------------
-    DAC_SetChannel2Data(DAC_Align_12b_R,dacval);//初始值为0-------------20180528--------------------
+  DAC_SetChannel2Data(DAC_Align_12b_R,dacval);	//初始值为0-------------20180528--------------------
 	
 	while(1)
 	{		
@@ -110,7 +110,7 @@ int main(void)
 			coil=(USART_RX_BUF[2]);
 			speed_coding=(USART_RX_BUF[3]);
 			speed=(USART_RX_BUF[4]);
-			length_coding=(USART_RX_BUF[5]);
+			length_coding=(USART_RX_BUF[5]);            //控制波形
 			length_H=(USART_RX_BUF[6]);
 			length_L=(USART_RX_BUF[7]);
 			voltage=(USART_RX_BUF[8]);
@@ -154,9 +154,8 @@ int main(void)
 					//frq=(10000*length*3.6)/(speed*256);				//256t=(length*3.6)/(speed*100*256)    公式原型，但因为参数过大，会导致计算中间变量逸出导致出错
 					frq=(12000*length)/(speed*256);				//256t=(length*3.6)/(speed*100*256)    公式原型，但因为参数过大，会导致计算中间变量逸出导致出错			
 					//printf("frq=%u\n",frq);
-					TIM14->ARR=frq/8-1;
-          TIM_SetCompare1(TIM14,frq/16);					
-					//TIM14_PWM_Init(1000,84-1);	//84M/84=1Mhz的计数频率,重装载值1000，所以PWM频率为 1M/1000=1Khz.    		
+					TIM14->ARR=10*(frq/8-1);                       //改变原来的频率(将真实值放大10倍以适应线圈的响应时间)
+          TIM_SetCompare1(TIM14,10*(frq/16));					
         
 					if(coil==0x03)
 					{   
@@ -185,7 +184,7 @@ int main(void)
 							break;}	
 						}
 					rst1=1;
-						delay_us(1000);
+						delay_us(5000);
 					rst1=0;
 					}
 
@@ -237,7 +236,7 @@ int main(void)
 				}
 				  
            rst1=0;	
-          delay_us(1000);				
+          delay_us(5000);				
            rst2=0;				
 		break;
 				}
