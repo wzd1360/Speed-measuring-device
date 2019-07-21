@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DDS
-Sun Jun 17 19:04:47 2018
+Sun Jul 21 11:54:36 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -20,14 +20,14 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
  12. Inverted Register Statistics
  13. Multiplexer Restructuring Statistics (Restructuring Performed)
  14. Source assignments for wavechoice:inst1|generator5:inst9|ROM5:inst1|altsyncram:altsyncram_component|altsyncram_4j91:auto_generated
- 15. Source assignments for wavechoice:inst1|generator1:inst1|ROM1:inst1|altsyncram:altsyncram_component|altsyncram_0j91:auto_generated
+ 15. Source assignments for wavechoice:inst1|generator1:inst1|ROM1:inst1|altsyncram:altsyncram_component|altsyncram_lc91:auto_generated
  16. Source assignments for wavechoice:inst1|generator4:inst7|ROM4:inst1|altsyncram:altsyncram_component|altsyncram_3j91:auto_generated
- 17. Source assignments for wavechoice:inst1|generator3:inst6|ROM3:inst1|altsyncram:altsyncram_component|altsyncram_2j91:auto_generated
+ 17. Source assignments for wavechoice:inst1|generator3:inst6|ROM3:inst1|altsyncram:altsyncram_component|altsyncram_0h91:auto_generated
  18. Source assignments for wavechoice:inst1|generator2:inst|ROM2:inst1|altsyncram:altsyncram_component|altsyncram_1j91:auto_generated
  19. Source assignments for wavechoice:inst5|generator5:inst9|ROM5:inst1|altsyncram:altsyncram_component|altsyncram_4j91:auto_generated
- 20. Source assignments for wavechoice:inst5|generator1:inst1|ROM1:inst1|altsyncram:altsyncram_component|altsyncram_0j91:auto_generated
+ 20. Source assignments for wavechoice:inst5|generator1:inst1|ROM1:inst1|altsyncram:altsyncram_component|altsyncram_lc91:auto_generated
  21. Source assignments for wavechoice:inst5|generator4:inst7|ROM4:inst1|altsyncram:altsyncram_component|altsyncram_3j91:auto_generated
- 22. Source assignments for wavechoice:inst5|generator3:inst6|ROM3:inst1|altsyncram:altsyncram_component|altsyncram_2j91:auto_generated
+ 22. Source assignments for wavechoice:inst5|generator3:inst6|ROM3:inst1|altsyncram:altsyncram_component|altsyncram_0h91:auto_generated
  23. Source assignments for wavechoice:inst5|generator2:inst|ROM2:inst1|altsyncram:altsyncram_component|altsyncram_1j91:auto_generated
  24. Parameter Settings for User Entity Instance: wavechoice:inst1|74151:0
  25. Parameter Settings for User Entity Instance: wavechoice:inst1|generator5:inst9|ROM5:inst1|altsyncram:altsyncram_component
@@ -93,7 +93,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jun 17 19:04:47 2018            ;
+; Analysis & Synthesis Status        ; Successful - Sun Jul 21 11:54:36 2019            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; DDS                                              ;
 ; Top-level Entity Name              ; DDS                                              ;
@@ -202,66 +202,65 @@ applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processors 2-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                          ;
-+----------------------------------+-----------------+----------------------------------------+-------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                            ; Library ;
-+----------------------------------+-----------------+----------------------------------------+-------------------------------------------------------------------------+---------+
-; PLL.v                            ; yes             ; User Wizard-Generated File             ; C:/DDS-0425/PLL.v                                                       ;         ;
-; DDS.bdf                          ; yes             ; User Block Diagram/Schematic File      ; C:/DDS-0425/DDS.bdf                                                     ;         ;
-; address.v                        ; yes             ; User Verilog HDL File                  ; C:/DDS-0425/address.v                                                   ;         ;
-; ROM1.v                           ; yes             ; User Wizard-Generated File             ; C:/DDS-0425/ROM1.v                                                      ;         ;
-; ROM2.v                           ; yes             ; User Wizard-Generated File             ; C:/DDS-0425/ROM2.v                                                      ;         ;
-; ROM3.v                           ; yes             ; User Wizard-Generated File             ; C:/DDS-0425/ROM3.v                                                      ;         ;
-; ROM4.v                           ; yes             ; User Wizard-Generated File             ; C:/DDS-0425/ROM4.v                                                      ;         ;
-; ROM5.v                           ; yes             ; User Wizard-Generated File             ; C:/DDS-0425/ROM5.v                                                      ;         ;
-; generator1.bdf                   ; yes             ; User Block Diagram/Schematic File      ; C:/DDS-0425/generator1.bdf                                              ;         ;
-; generator2.bdf                   ; yes             ; User Block Diagram/Schematic File      ; C:/DDS-0425/generator2.bdf                                              ;         ;
-; generator3.bdf                   ; yes             ; User Block Diagram/Schematic File      ; C:/DDS-0425/generator3.bdf                                              ;         ;
-; generator4.bdf                   ; yes             ; User Block Diagram/Schematic File      ; C:/DDS-0425/generator4.bdf                                              ;         ;
-; generator5.bdf                   ; yes             ; User Block Diagram/Schematic File      ; C:/DDS-0425/generator5.bdf                                              ;         ;
-; wavechoice.bdf                   ; yes             ; User Block Diagram/Schematic File      ; C:/DDS-0425/wavechoice.bdf                                              ;         ;
-; count.v                          ; yes             ; User Verilog HDL File                  ; C:/DDS-0425/count.v                                                     ;         ;
-; 74151.tdf                        ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/74151.tdf           ;         ;
-; aglobal.inc                      ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal.inc           ;         ;
-; f74151.bdf                       ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/f74151.bdf          ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; aglobal130.inc                   ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc        ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
-; altrom.inc                       ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc            ;         ;
-; altram.inc                       ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc            ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_4j91.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/DDS-0425/db/altsyncram_4j91.tdf                                      ;         ;
-; wave/pic5.hex                    ; yes             ; Auto-Found Memory Initialization File  ; C:/DDS-0425/wave/pic5.hex                                               ;         ;
-; db/altsyncram_0j91.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/DDS-0425/db/altsyncram_0j91.tdf                                      ;         ;
-; wave/pic1.hex                    ; yes             ; Auto-Found Memory Initialization File  ; C:/DDS-0425/wave/pic1.hex                                               ;         ;
-; db/altsyncram_3j91.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/DDS-0425/db/altsyncram_3j91.tdf                                      ;         ;
-; wave/pic4.hex                    ; yes             ; Auto-Found Memory Initialization File  ; C:/DDS-0425/wave/pic4.hex                                               ;         ;
-; db/altsyncram_2j91.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/DDS-0425/db/altsyncram_2j91.tdf                                      ;         ;
-; wave/pic3.hex                    ; yes             ; Auto-Found Memory Initialization File  ; C:/DDS-0425/wave/pic3.hex                                               ;         ;
-; db/altsyncram_1j91.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/DDS-0425/db/altsyncram_1j91.tdf                                      ;         ;
-; wave/pic2.hex                    ; yes             ; Auto-Found Memory Initialization File  ; C:/DDS-0425/wave/pic2.hex                                               ;         ;
-; altpll.tdf                       ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altpll.tdf            ;         ;
-; stratix_pll.inc                  ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_pll.inc       ;         ;
-; stratixii_pll.inc                ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratixii_pll.inc     ;         ;
-; cycloneii_pll.inc                ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/cycloneii_pll.inc     ;         ;
-; db/pll_altpll.v                  ; yes             ; Auto-Generated Megafunction            ; C:/DDS-0425/db/pll_altpll.v                                             ;         ;
-+----------------------------------+-----------------+----------------------------------------+-------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                   ;
++----------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                     ; Library ;
++----------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------------------+---------+
+; PLL.v                            ; yes             ; User Wizard-Generated File             ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/PLL.v                  ;         ;
+; DDS.bdf                          ; yes             ; User Block Diagram/Schematic File      ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/DDS.bdf                ;         ;
+; address.v                        ; yes             ; User Verilog HDL File                  ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/address.v              ;         ;
+; ROM1.v                           ; yes             ; User Wizard-Generated File             ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/ROM1.v                 ;         ;
+; ROM2.v                           ; yes             ; User Wizard-Generated File             ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/ROM2.v                 ;         ;
+; ROM3.v                           ; yes             ; User Wizard-Generated File             ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/ROM3.v                 ;         ;
+; ROM4.v                           ; yes             ; User Wizard-Generated File             ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/ROM4.v                 ;         ;
+; ROM5.v                           ; yes             ; User Wizard-Generated File             ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/ROM5.v                 ;         ;
+; generator1.bdf                   ; yes             ; User Block Diagram/Schematic File      ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/generator1.bdf         ;         ;
+; generator2.bdf                   ; yes             ; User Block Diagram/Schematic File      ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/generator2.bdf         ;         ;
+; generator3.bdf                   ; yes             ; User Block Diagram/Schematic File      ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/generator3.bdf         ;         ;
+; generator4.bdf                   ; yes             ; User Block Diagram/Schematic File      ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/generator4.bdf         ;         ;
+; generator5.bdf                   ; yes             ; User Block Diagram/Schematic File      ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/generator5.bdf         ;         ;
+; wavechoice.bdf                   ; yes             ; User Block Diagram/Schematic File      ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/wavechoice.bdf         ;         ;
+; count.v                          ; yes             ; User Verilog HDL File                  ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/count.v                ;         ;
+; 74151.tdf                        ; yes             ; Megafunction                           ; d:/tool/quaruts13.0/quartus/libraries/others/maxplus2/74151.tdf                  ;         ;
+; aglobal.inc                      ; yes             ; Megafunction                           ; d:/tool/quaruts13.0/quartus/libraries/megafunctions/aglobal.inc                  ;         ;
+; f74151.bdf                       ; yes             ; Megafunction                           ; d:/tool/quaruts13.0/quartus/libraries/others/maxplus2/f74151.bdf                 ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                           ; d:/tool/quaruts13.0/quartus/libraries/megafunctions/altsyncram.tdf               ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                           ; d:/tool/quaruts13.0/quartus/libraries/megafunctions/stratix_ram_block.inc        ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                           ; d:/tool/quaruts13.0/quartus/libraries/megafunctions/lpm_mux.inc                  ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                           ; d:/tool/quaruts13.0/quartus/libraries/megafunctions/lpm_decode.inc               ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                           ; d:/tool/quaruts13.0/quartus/libraries/megafunctions/aglobal130.inc               ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                           ; d:/tool/quaruts13.0/quartus/libraries/megafunctions/a_rdenreg.inc                ;         ;
+; altrom.inc                       ; yes             ; Megafunction                           ; d:/tool/quaruts13.0/quartus/libraries/megafunctions/altrom.inc                   ;         ;
+; altram.inc                       ; yes             ; Megafunction                           ; d:/tool/quaruts13.0/quartus/libraries/megafunctions/altram.inc                   ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                           ; d:/tool/quaruts13.0/quartus/libraries/megafunctions/altdpram.inc                 ;         ;
+; db/altsyncram_4j91.tdf           ; yes             ; Auto-Generated Megafunction            ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/db/altsyncram_4j91.tdf ;         ;
+; wave/pic5.hex                    ; yes             ; Auto-Found Memory Initialization File  ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/wave/pic5.hex          ;         ;
+; db/altsyncram_lc91.tdf           ; yes             ; Auto-Generated Megafunction            ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/db/altsyncram_lc91.tdf ;         ;
+; pic_max.hex                      ; yes             ; Auto-Found Memory Initialization File  ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/pic_max.hex            ;         ;
+; db/altsyncram_3j91.tdf           ; yes             ; Auto-Generated Megafunction            ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/db/altsyncram_3j91.tdf ;         ;
+; wave/pic4.hex                    ; yes             ; Auto-Found Memory Initialization File  ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/wave/pic4.hex          ;         ;
+; db/altsyncram_0h91.tdf           ; yes             ; Auto-Generated Megafunction            ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/db/altsyncram_0h91.tdf ;         ;
+; db/altsyncram_1j91.tdf           ; yes             ; Auto-Generated Megafunction            ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/db/altsyncram_1j91.tdf ;         ;
+; wave/pic2.hex                    ; yes             ; Auto-Found Memory Initialization File  ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/wave/pic2.hex          ;         ;
+; altpll.tdf                       ; yes             ; Megafunction                           ; d:/tool/quaruts13.0/quartus/libraries/megafunctions/altpll.tdf                   ;         ;
+; stratix_pll.inc                  ; yes             ; Megafunction                           ; d:/tool/quaruts13.0/quartus/libraries/megafunctions/stratix_pll.inc              ;         ;
+; stratixii_pll.inc                ; yes             ; Megafunction                           ; d:/tool/quaruts13.0/quartus/libraries/megafunctions/stratixii_pll.inc            ;         ;
+; cycloneii_pll.inc                ; yes             ; Megafunction                           ; d:/tool/quaruts13.0/quartus/libraries/megafunctions/cycloneii_pll.inc            ;         ;
+; db/pll_altpll.v                  ; yes             ; Auto-Generated Megafunction            ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/db/pll_altpll.v        ;         ;
++----------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -336,7 +335,7 @@ applicable agreement for further details.
 ;       |generator1:inst1|                        ; 27 (0)            ; 8 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst1|generator1:inst1                                                                           ; work         ;
 ;          |ROM1:inst1|                           ; 0 (0)             ; 0 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst1|generator1:inst1|ROM1:inst1                                                                ; work         ;
 ;             |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst1|generator1:inst1|ROM1:inst1|altsyncram:altsyncram_component                                ; work         ;
-;                |altsyncram_0j91:auto_generated| ; 0 (0)             ; 0 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst1|generator1:inst1|ROM1:inst1|altsyncram:altsyncram_component|altsyncram_0j91:auto_generated ; work         ;
+;                |altsyncram_lc91:auto_generated| ; 0 (0)             ; 0 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst1|generator1:inst1|ROM1:inst1|altsyncram:altsyncram_component|altsyncram_lc91:auto_generated ; work         ;
 ;          |address:inst|                         ; 27 (27)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst1|generator1:inst1|address:inst                                                              ; work         ;
 ;       |generator2:inst|                         ; 0 (0)             ; 0 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst1|generator2:inst                                                                            ; work         ;
 ;          |ROM2:inst1|                           ; 0 (0)             ; 0 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst1|generator2:inst|ROM2:inst1                                                                 ; work         ;
@@ -345,7 +344,7 @@ applicable agreement for further details.
 ;       |generator3:inst6|                        ; 0 (0)             ; 0 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst1|generator3:inst6                                                                           ; work         ;
 ;          |ROM3:inst1|                           ; 0 (0)             ; 0 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst1|generator3:inst6|ROM3:inst1                                                                ; work         ;
 ;             |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst1|generator3:inst6|ROM3:inst1|altsyncram:altsyncram_component                                ; work         ;
-;                |altsyncram_2j91:auto_generated| ; 0 (0)             ; 0 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst1|generator3:inst6|ROM3:inst1|altsyncram:altsyncram_component|altsyncram_2j91:auto_generated ; work         ;
+;                |altsyncram_0h91:auto_generated| ; 0 (0)             ; 0 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst1|generator3:inst6|ROM3:inst1|altsyncram:altsyncram_component|altsyncram_0h91:auto_generated ; work         ;
 ;       |generator4:inst7|                        ; 0 (0)             ; 0 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst1|generator4:inst7                                                                           ; work         ;
 ;          |ROM4:inst1|                           ; 0 (0)             ; 0 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst1|generator4:inst7|ROM4:inst1                                                                ; work         ;
 ;             |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst1|generator4:inst7|ROM4:inst1|altsyncram:altsyncram_component                                ; work         ;
@@ -382,7 +381,7 @@ applicable agreement for further details.
 ;       |generator1:inst1|                        ; 27 (0)            ; 8 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst5|generator1:inst1                                                                           ; work         ;
 ;          |ROM1:inst1|                           ; 0 (0)             ; 0 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst5|generator1:inst1|ROM1:inst1                                                                ; work         ;
 ;             |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst5|generator1:inst1|ROM1:inst1|altsyncram:altsyncram_component                                ; work         ;
-;                |altsyncram_0j91:auto_generated| ; 0 (0)             ; 0 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst5|generator1:inst1|ROM1:inst1|altsyncram:altsyncram_component|altsyncram_0j91:auto_generated ; work         ;
+;                |altsyncram_lc91:auto_generated| ; 0 (0)             ; 0 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst5|generator1:inst1|ROM1:inst1|altsyncram:altsyncram_component|altsyncram_lc91:auto_generated ; work         ;
 ;          |address:inst|                         ; 27 (27)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst5|generator1:inst1|address:inst                                                              ; work         ;
 ;       |generator2:inst|                         ; 0 (0)             ; 0 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst5|generator2:inst                                                                            ; work         ;
 ;          |ROM2:inst1|                           ; 0 (0)             ; 0 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst5|generator2:inst|ROM2:inst1                                                                 ; work         ;
@@ -391,7 +390,7 @@ applicable agreement for further details.
 ;       |generator3:inst6|                        ; 0 (0)             ; 0 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst5|generator3:inst6                                                                           ; work         ;
 ;          |ROM3:inst1|                           ; 0 (0)             ; 0 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst5|generator3:inst6|ROM3:inst1                                                                ; work         ;
 ;             |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst5|generator3:inst6|ROM3:inst1|altsyncram:altsyncram_component                                ; work         ;
-;                |altsyncram_2j91:auto_generated| ; 0 (0)             ; 0 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst5|generator3:inst6|ROM3:inst1|altsyncram:altsyncram_component|altsyncram_2j91:auto_generated ; work         ;
+;                |altsyncram_0h91:auto_generated| ; 0 (0)             ; 0 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst5|generator3:inst6|ROM3:inst1|altsyncram:altsyncram_component|altsyncram_0h91:auto_generated ; work         ;
 ;       |generator4:inst7|                        ; 0 (0)             ; 0 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst5|generator4:inst7                                                                           ; work         ;
 ;          |ROM4:inst1|                           ; 0 (0)             ; 0 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst5|generator4:inst7|ROM4:inst1                                                                ; work         ;
 ;             |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |DDS|wavechoice:inst5|generator4:inst7|ROM4:inst1|altsyncram:altsyncram_component                                ; work         ;
@@ -409,36 +408,36 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------------+
 ; Name                                                                                                                   ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF             ;
 +------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------------+
-; wavechoice:inst1|generator1:inst1|ROM1:inst1|altsyncram:altsyncram_component|altsyncram_0j91:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 12           ; --           ; --           ; 3072 ; ./wave/pic1.hex ;
+; wavechoice:inst1|generator1:inst1|ROM1:inst1|altsyncram:altsyncram_component|altsyncram_lc91:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 12           ; --           ; --           ; 3072 ; pic_max.hex     ;
 ; wavechoice:inst1|generator2:inst|ROM2:inst1|altsyncram:altsyncram_component|altsyncram_1j91:auto_generated|ALTSYNCRAM  ; AUTO ; ROM  ; 256          ; 12           ; --           ; --           ; 3072 ; ./wave/pic2.hex ;
-; wavechoice:inst1|generator3:inst6|ROM3:inst1|altsyncram:altsyncram_component|altsyncram_2j91:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 12           ; --           ; --           ; 3072 ; ./wave/pic3.hex ;
+; wavechoice:inst1|generator3:inst6|ROM3:inst1|altsyncram:altsyncram_component|altsyncram_0h91:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 12           ; --           ; --           ; 3072 ; ../pic_max.hex  ;
 ; wavechoice:inst1|generator4:inst7|ROM4:inst1|altsyncram:altsyncram_component|altsyncram_3j91:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 12           ; --           ; --           ; 3072 ; ./wave/pic4.hex ;
 ; wavechoice:inst1|generator5:inst9|ROM5:inst1|altsyncram:altsyncram_component|altsyncram_4j91:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 12           ; --           ; --           ; 3072 ; ./wave/pic5.hex ;
-; wavechoice:inst5|generator1:inst1|ROM1:inst1|altsyncram:altsyncram_component|altsyncram_0j91:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 12           ; --           ; --           ; 3072 ; ./wave/pic1.hex ;
+; wavechoice:inst5|generator1:inst1|ROM1:inst1|altsyncram:altsyncram_component|altsyncram_lc91:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 12           ; --           ; --           ; 3072 ; pic_max.hex     ;
 ; wavechoice:inst5|generator2:inst|ROM2:inst1|altsyncram:altsyncram_component|altsyncram_1j91:auto_generated|ALTSYNCRAM  ; AUTO ; ROM  ; 256          ; 12           ; --           ; --           ; 3072 ; ./wave/pic2.hex ;
-; wavechoice:inst5|generator3:inst6|ROM3:inst1|altsyncram:altsyncram_component|altsyncram_2j91:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 12           ; --           ; --           ; 3072 ; ./wave/pic3.hex ;
+; wavechoice:inst5|generator3:inst6|ROM3:inst1|altsyncram:altsyncram_component|altsyncram_0h91:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 12           ; --           ; --           ; 3072 ; ../pic_max.hex  ;
 ; wavechoice:inst5|generator4:inst7|ROM4:inst1|altsyncram:altsyncram_component|altsyncram_3j91:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 12           ; --           ; --           ; 3072 ; ./wave/pic4.hex ;
 ; wavechoice:inst5|generator5:inst9|ROM5:inst1|altsyncram:altsyncram_component|altsyncram_4j91:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 12           ; --           ; --           ; 3072 ; ./wave/pic5.hex ;
 +------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                  ;
-+--------+--------------+---------+--------------+--------------+---------------------------------------------------+--------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                   ; IP Include File    ;
-+--------+--------------+---------+--------------+--------------+---------------------------------------------------+--------------------+
-; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |DDS|wavechoice:inst1|generator2:inst|ROM2:inst1  ; C:/DDS-0425/ROM2.v ;
-; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |DDS|wavechoice:inst1|generator1:inst1|ROM1:inst1 ; C:/DDS-0425/ROM1.v ;
-; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |DDS|wavechoice:inst1|generator3:inst6|ROM3:inst1 ; C:/DDS-0425/ROM3.v ;
-; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |DDS|wavechoice:inst1|generator4:inst7|ROM4:inst1 ; C:/DDS-0425/ROM4.v ;
-; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |DDS|wavechoice:inst1|generator5:inst9|ROM5:inst1 ; C:/DDS-0425/ROM5.v ;
-; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |DDS|wavechoice:inst5|generator2:inst|ROM2:inst1  ; C:/DDS-0425/ROM2.v ;
-; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |DDS|wavechoice:inst5|generator1:inst1|ROM1:inst1 ; C:/DDS-0425/ROM1.v ;
-; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |DDS|wavechoice:inst5|generator3:inst6|ROM3:inst1 ; C:/DDS-0425/ROM3.v ;
-; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |DDS|wavechoice:inst5|generator4:inst7|ROM4:inst1 ; C:/DDS-0425/ROM4.v ;
-; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |DDS|wavechoice:inst5|generator5:inst9|ROM5:inst1 ; C:/DDS-0425/ROM5.v ;
-; Altera ; ALTPLL       ; 13.0    ; N/A          ; N/A          ; |DDS|PLL:inst16                                   ; C:/DDS-0425/PLL.v  ;
-+--------+--------------+---------+--------------+--------------+---------------------------------------------------+--------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                                ;
++--------+--------------+---------+--------------+--------------+---------------------------------------------------+------------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                   ; IP Include File                                                  ;
++--------+--------------+---------+--------------+--------------+---------------------------------------------------+------------------------------------------------------------------+
+; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |DDS|wavechoice:inst1|generator2:inst|ROM2:inst1  ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/ROM2.v ;
+; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |DDS|wavechoice:inst1|generator1:inst1|ROM1:inst1 ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/ROM1.v ;
+; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |DDS|wavechoice:inst1|generator3:inst6|ROM3:inst1 ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/ROM3.v ;
+; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |DDS|wavechoice:inst1|generator4:inst7|ROM4:inst1 ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/ROM4.v ;
+; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |DDS|wavechoice:inst1|generator5:inst9|ROM5:inst1 ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/ROM5.v ;
+; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |DDS|wavechoice:inst5|generator2:inst|ROM2:inst1  ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/ROM2.v ;
+; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |DDS|wavechoice:inst5|generator1:inst1|ROM1:inst1 ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/ROM1.v ;
+; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |DDS|wavechoice:inst5|generator3:inst6|ROM3:inst1 ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/ROM3.v ;
+; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |DDS|wavechoice:inst5|generator4:inst7|ROM4:inst1 ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/ROM4.v ;
+; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |DDS|wavechoice:inst5|generator5:inst9|ROM5:inst1 ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/ROM5.v ;
+; Altera ; ALTPLL       ; 13.0    ; N/A          ; N/A          ; |DDS|PLL:inst16                                   ; D:/project/Github/Speed-measuring-device/DDS-FinalProgram/PLL.v  ;
++--------+--------------+---------+--------------+--------------+---------------------------------------------------+------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -576,7 +575,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for wavechoice:inst1|generator1:inst1|ROM1:inst1|altsyncram:altsyncram_component|altsyncram_0j91:auto_generated ;
+; Source assignments for wavechoice:inst1|generator1:inst1|ROM1:inst1|altsyncram:altsyncram_component|altsyncram_lc91:auto_generated ;
 +---------------------------------+--------------------+------+----------------------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                                   ;
 +---------------------------------+--------------------+------+----------------------------------------------------------------------+
@@ -594,7 +593,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for wavechoice:inst1|generator3:inst6|ROM3:inst1|altsyncram:altsyncram_component|altsyncram_2j91:auto_generated ;
+; Source assignments for wavechoice:inst1|generator3:inst6|ROM3:inst1|altsyncram:altsyncram_component|altsyncram_0h91:auto_generated ;
 +---------------------------------+--------------------+------+----------------------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                                   ;
 +---------------------------------+--------------------+------+----------------------------------------------------------------------+
@@ -621,7 +620,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for wavechoice:inst5|generator1:inst1|ROM1:inst1|altsyncram:altsyncram_component|altsyncram_0j91:auto_generated ;
+; Source assignments for wavechoice:inst5|generator1:inst1|ROM1:inst1|altsyncram:altsyncram_component|altsyncram_lc91:auto_generated ;
 +---------------------------------+--------------------+------+----------------------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                                   ;
 +---------------------------------+--------------------+------+----------------------------------------------------------------------+
@@ -639,7 +638,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for wavechoice:inst5|generator3:inst6|ROM3:inst1|altsyncram:altsyncram_component|altsyncram_2j91:auto_generated ;
+; Source assignments for wavechoice:inst5|generator3:inst6|ROM3:inst1|altsyncram:altsyncram_component|altsyncram_0h91:auto_generated ;
 +---------------------------------+--------------------+------+----------------------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                                   ;
 +---------------------------------+--------------------+------+----------------------------------------------------------------------+
@@ -774,7 +773,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                                       ;
 ; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                       ;
 ; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                       ;
-; INIT_FILE                          ; ./wave/pic1.hex      ; Untyped                                                       ;
+; INIT_FILE                          ; pic_max.hex          ; Untyped                                                       ;
 ; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                                       ;
 ; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                                       ;
 ; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                                       ;
@@ -787,7 +786,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                       ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                       ;
 ; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                                                       ;
-; CBXI_PARAMETER                     ; altsyncram_0j91      ; Untyped                                                       ;
+; CBXI_PARAMETER                     ; altsyncram_lc91      ; Untyped                                                       ;
 +------------------------------------+----------------------+---------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -896,7 +895,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                                       ;
 ; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                       ;
 ; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                       ;
-; INIT_FILE                          ; ./wave/pic3.hex      ; Untyped                                                       ;
+; INIT_FILE                          ; ../pic_max.hex       ; Untyped                                                       ;
 ; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                                       ;
 ; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                                       ;
 ; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                                       ;
@@ -909,7 +908,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                       ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                       ;
 ; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                                                       ;
-; CBXI_PARAMETER                     ; altsyncram_2j91      ; Untyped                                                       ;
+; CBXI_PARAMETER                     ; altsyncram_0h91      ; Untyped                                                       ;
 +------------------------------------+----------------------+---------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1247,7 +1246,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                                       ;
 ; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                       ;
 ; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                       ;
-; INIT_FILE                          ; ./wave/pic1.hex      ; Untyped                                                       ;
+; INIT_FILE                          ; pic_max.hex          ; Untyped                                                       ;
 ; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                                       ;
 ; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                                       ;
 ; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                                       ;
@@ -1260,7 +1259,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                       ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                       ;
 ; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                                                       ;
-; CBXI_PARAMETER                     ; altsyncram_0j91      ; Untyped                                                       ;
+; CBXI_PARAMETER                     ; altsyncram_lc91      ; Untyped                                                       ;
 +------------------------------------+----------------------+---------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1369,7 +1368,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                                       ;
 ; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                       ;
 ; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                       ;
-; INIT_FILE                          ; ./wave/pic3.hex      ; Untyped                                                       ;
+; INIT_FILE                          ; ../pic_max.hex       ; Untyped                                                       ;
 ; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                                       ;
 ; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                                       ;
 ; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                                       ;
@@ -1382,7 +1381,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                       ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                       ;
 ; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                                                       ;
-; CBXI_PARAMETER                     ; altsyncram_2j91      ; Untyped                                                       ;
+; CBXI_PARAMETER                     ; altsyncram_0h91      ; Untyped                                                       ;
 +------------------------------------+----------------------+---------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -2127,9 +2126,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Sun Jun 17 19:04:42 2018
+    Info: Processing started: Sun Jul 21 11:54:32 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DDS -c DDS
-Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file pll.v
     Info (12023): Found entity 1: PLL
 Info (12021): Found 1 design units, including 1 entities, in source file dds.bdf
@@ -2228,7 +2227,7 @@ Info (12133): Instantiated megafunction "wavechoice:inst1|generator1:inst1|ROM1:
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
-    Info (12134): Parameter "init_file" = "./wave/pic1.hex"
+    Info (12134): Parameter "init_file" = "pic_max.hex"
     Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
@@ -2239,9 +2238,9 @@ Info (12133): Instantiated megafunction "wavechoice:inst1|generator1:inst1|ROM1:
     Info (12134): Parameter "widthad_a" = "8"
     Info (12134): Parameter "width_a" = "12"
     Info (12134): Parameter "width_byteena_a" = "1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_0j91.tdf
-    Info (12023): Found entity 1: altsyncram_0j91
-Info (12128): Elaborating entity "altsyncram_0j91" for hierarchy "wavechoice:inst1|generator1:inst1|ROM1:inst1|altsyncram:altsyncram_component|altsyncram_0j91:auto_generated"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_lc91.tdf
+    Info (12023): Found entity 1: altsyncram_lc91
+Info (12128): Elaborating entity "altsyncram_lc91" for hierarchy "wavechoice:inst1|generator1:inst1|ROM1:inst1|altsyncram:altsyncram_component|altsyncram_lc91:auto_generated"
 Info (12128): Elaborating entity "generator4" for hierarchy "wavechoice:inst1|generator4:inst7"
 Warning (275080): Converted elements in bus name "q" using legacy naming rules. Make any assignments on the new names, not on the original names.
     Warning (275081): Converted element name(s) from "q[11]" to "q11"
@@ -2300,7 +2299,7 @@ Info (12133): Instantiated megafunction "wavechoice:inst1|generator3:inst6|ROM3:
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
-    Info (12134): Parameter "init_file" = "./wave/pic3.hex"
+    Info (12134): Parameter "init_file" = "../pic_max.hex"
     Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
@@ -2311,9 +2310,9 @@ Info (12133): Instantiated megafunction "wavechoice:inst1|generator3:inst6|ROM3:
     Info (12134): Parameter "widthad_a" = "8"
     Info (12134): Parameter "width_a" = "12"
     Info (12134): Parameter "width_byteena_a" = "1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_2j91.tdf
-    Info (12023): Found entity 1: altsyncram_2j91
-Info (12128): Elaborating entity "altsyncram_2j91" for hierarchy "wavechoice:inst1|generator3:inst6|ROM3:inst1|altsyncram:altsyncram_component|altsyncram_2j91:auto_generated"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_0h91.tdf
+    Info (12023): Found entity 1: altsyncram_0h91
+Info (12128): Elaborating entity "altsyncram_0h91" for hierarchy "wavechoice:inst1|generator3:inst6|ROM3:inst1|altsyncram:altsyncram_component|altsyncram_0h91:auto_generated"
 Info (12128): Elaborating entity "generator2" for hierarchy "wavechoice:inst1|generator2:inst"
 Warning (275080): Converted elements in bus name "q" using legacy naming rules. Make any assignments on the new names, not on the original names.
     Warning (275081): Converted element name(s) from "q[11]" to "q11"
@@ -2424,9 +2423,9 @@ Info (21057): Implemented 372 device resources after synthesis - the final resou
     Info (21064): Implemented 120 RAM segments
     Info (21065): Implemented 1 PLLs
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 72 warnings
-    Info: Peak virtual memory: 532 megabytes
-    Info: Processing ended: Sun Jun 17 19:04:47 2018
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Peak virtual memory: 4667 megabytes
+    Info: Processing ended: Sun Jul 21 11:54:36 2019
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
 
 

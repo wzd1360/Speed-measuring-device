@@ -244,7 +244,36 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 360 176 576 304)
+	(rect 176 176 336 256)
+	(text "address" (rect 5 0 43 12)(font "Arial" ))
+	(text "inst" (rect 8 64 25 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "CLK" (rect 0 0 21 12)(font "Arial" ))
+		(text "CLK" (rect 21 27 42 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "rst" (rect 0 0 12 12)(font "Arial" ))
+		(text "rst" (rect 21 43 33 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 160 32)
+		(output)
+		(text "add[7..0]" (rect 0 0 43 12)(font "Arial" ))
+		(text "add[7..0]" (rect 103 27 146 39)(font "Arial" ))
+		(line (pt 160 32)(pt 144 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 144 64))
+	)
+)
+(symbol
+	(rect 368 176 584 304)
 	(text "ROM3" (rect 90 0 133 16)(font "Arial" (font_size 10)))
 	(text "inst1" (rect 8 112 31 124)(font "Arial" ))
 	(port
@@ -304,35 +333,6 @@ applicable agreement for further details.
 		(line (pt 0 0)(pt 0 0))
 		(line (pt 0 0)(pt 0 0))
 		(line (pt 0 0)(pt 0 0))
-	)
-)
-(symbol
-	(rect 176 176 336 256)
-	(text "address" (rect 5 0 43 12)(font "Arial" ))
-	(text "inst" (rect 8 64 25 76)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "CLK" (rect 0 0 21 12)(font "Arial" ))
-		(text "CLK" (rect 21 27 42 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "rst" (rect 0 0 12 12)(font "Arial" ))
-		(text "rst" (rect 21 43 33 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 160 32)
-		(output)
-		(text "add[7..0]" (rect 0 0 43 12)(font "Arial" ))
-		(text "add[7..0]" (rect 103 27 146 39)(font "Arial" ))
-		(line (pt 160 32)(pt 144 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 144 64))
 	)
 )
 (connector
@@ -396,17 +396,27 @@ applicable agreement for further details.
 	(pt 720 320)
 )
 (connector
+	(pt 176 224)
+	(pt 128 224)
+)
+(connector
+	(pt 336 208)
+	(pt 368 208)
+	(bus)
+)
+(connector
 	(pt 152 208)
 	(pt 152 288)
 )
 (connector
-	(pt 336 208)
-	(pt 360 208)
-	(bus)
+	(pt 152 288)
+	(pt 368 288)
 )
 (connector
-	(pt 152 288)
-	(pt 360 288)
+	(text "q[11..0]" (rect 593 192 630 204)(font "Arial" ))
+	(pt 584 208)
+	(pt 640 208)
+	(bus)
 )
 (connector
 	(pt 128 208)
@@ -415,15 +425,5 @@ applicable agreement for further details.
 (connector
 	(pt 152 208)
 	(pt 176 208)
-)
-(connector
-	(text "q[11..0]" (rect 585 192 622 204)(font "Arial" ))
-	(pt 576 208)
-	(pt 632 208)
-	(bus)
-)
-(connector
-	(pt 176 224)
-	(pt 128 224)
 )
 (junction (pt 152 208))

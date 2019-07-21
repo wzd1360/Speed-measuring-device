@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE6F17) Path("C:/DDS-0425/output_files/") File("DDS.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE6F17) Path("C:/Users/admin/Desktop/DDS-20180617_FinalProgram/output_files/") File("DDS.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

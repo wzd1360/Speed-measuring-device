@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="DDS">
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS|PLL:inst16|altpll:altpll_component" CBX_FILE_NAME="PLL_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS|wavechoice:inst1|generator2:inst|ROM2:inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_1j91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS|wavechoice:inst1|generator3:inst6|ROM3:inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_0h91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS|wavechoice:inst5|generator2:inst|ROM2:inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_1j91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS|wavechoice:inst5|generator3:inst6|ROM3:inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_0h91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS|wavechoice:inst1|generator1:inst1|ROM1:inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_lc91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS|wavechoice:inst1|generator4:inst7|ROM4:inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_3j91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS|wavechoice:inst1|generator5:inst9|ROM5:inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_4j91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS|wavechoice:inst5|generator1:inst1|ROM1:inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_lc91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS|wavechoice:inst5|generator4:inst7|ROM4:inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_3j91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS|wavechoice:inst5|generator5:inst9|ROM5:inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_4j91.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

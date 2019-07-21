@@ -18,7 +18,7 @@
 //作者：正点原子 @ALIENTEK
 
 
-u16  sum1=0;           //第一路信号电压输出值
+	u16  sum1=0;           //第一路信号电压输出值
 	u16  sum2=0;
 int main(void)
 { 
@@ -29,20 +29,20 @@ int main(void)
 	u8   t;
 	u8   len=0;             //串口接收的字节长度
 	//****串口参数获取****//
-	u8   command=0;       //设定命令字
+	u8   command=0;       	//设定命令字
     u8   coil=0;          //线圈序号
     u8   speed_coding=0;  //速度编码
     u8   speed=0;         //速度值
     u8   length_coding=0; //长度编码
     u8   length_H=0;      //长度值高位
-	u8   length_L=0;      //长度值低位
-	u16  length=0;       //长度值
-	u8   voltage=0;       //电压倍数
-	u8   current_H=0;     //电流值高位
-	u8   current_L=0;     //电流值低位
+	u8   length_L=0;      	//长度值低位
+	u16  length=0;       		//长度值
+	u8   voltage=0;      		//电压倍数
+	u8   current_H=0;     	//电流值高位
+	u8   current_L=0;     	//电流值低位
 	
-	u8  gap_H=0;    //线圈间距高位
-	u8  gap_L=0;     //线圈间距低位
+	u8  gap_H=0;    				//线圈间距高位
+	u8  gap_L=0;     				//线圈间距低位
 	u16 gap=0;
 	//****命令三回复帧****//
 	u8   sendcache[14];
@@ -60,7 +60,7 @@ int main(void)
 	u16  c2=0;
 	u32 time_spend=0;
 	//****输出方波的的频率控制****//
-	u32 pwmval=200;
+	u32 pwmval=1000;					//占空比中负脉宽的宽度（0.001ms)
 	u32  frq;
 			TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure;
 	NVIC_InitTypeDef NVIC_InitStructure;
@@ -91,12 +91,12 @@ int main(void)
 	
 	
 	LED_Init();  
-	KEY_Init(); 				//按键初始化
-	Dac12_Init();		 		//DAC通道1初始化	
-	PI_Init();                  //输入管脚初始化
-	PO_Init();                  //输出管脚初始化
- 	TIM14_PWM_Init(1000-1,84-1);	//84M/84=1Mhz的计数频率,重装载值100，所以PWM频率为 1M/1000=1Khz.     
-	TIM_SetCompare1(TIM14,pwmval);  //修改占空比（保持50% pwmval=arr/2）
+	KEY_Init(); 											//按键初始化
+	Dac12_Init();		 									//DAC通道1初始化	
+	PI_Init();                  			//输入管脚初始化
+	PO_Init();                  			//输出管脚初始化
+ 	TIM14_PWM_Init(2000-1,84-1);			//84M/84=1Mhz的计数频率,重装载值1000，所以PWM频率为 1M/1000=1Khz.         决定了FPGAROM中数据的刷写速度 
+	TIM_SetCompare1(TIM14,pwmval);  	//修改占空比（保持50% pwmval=arr/2）
 	DAC_SetChannel1Data(DAC_Align_12b_R,dacval);  //初始值为0	--------------20180528--------------------
     DAC_SetChannel2Data(DAC_Align_12b_R,dacval);//初始值为0-------------20180528--------------------
 	
@@ -165,7 +165,7 @@ int main(void)
 						{
 							case 0x00:
 						{PO2=0;PO1=0;PO0=0;
-								break;}
+								break;} 
 							case 0x01:
 						{PO2=0;PO1=0;PO0=1;
 								break;}
@@ -188,8 +188,7 @@ int main(void)
 						delay_us(1000);
 					rst1=0;
 					}
-				      //if(time_spend > 900)
-								//time_spend-=900;
+
 					while(time_spend!=0)    //防止函数delay_us（）函数溢出
 					{
 						if((time_spend/500000)>0)
@@ -208,7 +207,7 @@ int main(void)
 					//delay_us(100000);
 					//rst1=0;
 					//delay_us(50000-900);
-				//	delay_us(40000);
+				  //delay_us(40000);
 					{
 					switch(length_coding)
 						{
